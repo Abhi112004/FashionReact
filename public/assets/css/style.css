@@ -1425,7 +1425,94 @@ a {
   .container {
     max-width: 620px;
   }
+  .header {
+    display: block;
+  }
+  .header-top {
+    display: none;
 
+  }
+  .header-middel {
+    display: none;
+
+  }
+  .btn-icon::after {
+    content: "\f107";
+    font-family: "Font Awesome 6 free";
+    position: absolute;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10px;
+  }
+  .btn-icon1::after {
+    content: "\f107";
+   top: 0;
+   transform: translate(0,0);
+
+  }
+  .header-buttom-outer .buttom-inner>li>a{
+    display: block;
+  }
+  .header-buttom-outer .buttom-inner li .sub-item > li:hover .btn-icon1::after {
+    content: "\f106";
+  }
+  .header-buttom-outer {
+    display: none;
+    background-color: white;
+    color: #000;
+  }
+  .header-buttom-outer .buttom-inner {
+    display: block;
+    margin-left: 0px;
+  }
+
+  .header-buttom-outer .buttom-inner>li{
+    display: block;
+    position: relative;
+    font-weight: 600;
+    padding:10px 0;
+    border-top: 1px solid black;
+  }
+  .header-buttom-outer .buttom-inner > li > a {
+    padding:0;
+  }
+  .header-buttom-outer .buttom-inner li .sub-item {
+    display: block;
+    position: static;
+
+    /* transition: all 1s ease-in-out; */
+  }
+  .header-buttom-outer .buttom-inner>li>.sub-item>li {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    border-top:1px solid #227ed1;
+  }
+  .header-buttom-outer .buttom-inner >li .sub-item>li>.sub-item-inner{
+    display: block;
+    position: static;
+
+  }
+  .header-buttom-outer .buttom-inner>li>.sub-item>li>.sub-item-inner>li{
+    border-top: 1px solid rebeccapurple;
+  }
+  .header-buttom-outer .buttom-inner li .sub-item li .sub-item-inner li > a {
+    display: inline-block;
+    color: #555555;
+    padding: 5px 15px;
+    font-weight: 400;
+  }
+  .header-buttom-outer .buttom-inner > li > a {
+    color: #000;
+  }
+  .header-buttom-outer .buttom-inner li .sub-item li>a {
+
+    color: #227ed1;
+  }
 .small-header{
   display: block;
 }
@@ -1482,15 +1569,7 @@ justify-content: end;
   align-self: center;
   font-size: 14px;
 }
-  .header {
-    display: none;
-  }
-  .header-buttom-outer {
-    display: none;
-    clear: both;
-    margin-top: 35px;
-    background-color: black;
-  }
+ 
 
   .title h2::before {
     width: 60%;

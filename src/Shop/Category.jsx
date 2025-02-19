@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaPlus } from "react-icons/fa6";
 const Category = () => {
   return (
     <>
@@ -12,15 +12,19 @@ const Category = () => {
             <ul className="sub-title">
               <li>
                 <a href="/">fashion</a>
+                <span><FaPlus /></span>
               </li>
               <li>
                 <a href="/">Jewellery</a>
+                <span><FaPlus /></span>
               </li>
               <li>
                 <a href="/">furniture</a>
+                <span><FaPlus /></span>
               </li>
               <li>
                 <a href="/">Autoparts</a>
+                <span><FaPlus /></span>
               </li>
             </ul>
           </li>

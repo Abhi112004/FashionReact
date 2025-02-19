@@ -1,4 +1,5 @@
 import React from "react";
+import { FaChevronDown } from "react-icons/fa";
 const  SaleFilterby= () => {
   return (
     <>
@@ -14,6 +15,7 @@ const  SaleFilterby= () => {
              
               <li>
                 <a href="/">Price</a>
+                <span> <FaChevronDown /></span>
               </li>
             </ul>
           </li>

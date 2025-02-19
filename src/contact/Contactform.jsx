@@ -33,8 +33,7 @@ const Contactform = () => {
                   Choose File
                 </label>
                 <input type="file" id="file-input" style={{display:'none'}} />
-                <span className="
-optional ">
+                <span className="optional ">
                 optional </span>
               </th>
             </tr>

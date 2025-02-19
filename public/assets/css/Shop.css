@@ -33,19 +33,34 @@
 .shop-inner>li{
     border-bottom: 1px solid #d1d1d1;
 }
+
 .sub-title{
     display: block;
 	padding: 0 15px;
 	background: #ffffff;
 	color: #333333;
 }
-
+.sub-title>li{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.sub-title>li>span{
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(0,-50%);
+}
 .sub-title>li>a{
     display: block;
     padding: 06px 0;
     text-transform: capitalize;
     font-weight: 500;
 
+}
+.sub-title>li:hover{
+  color: #227ed1;
 }
 /*  */
 
@@ -75,7 +90,22 @@
 	background: #ffffff;
 	color: #333333;
 }
-
+.Filter-sub-title>li{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.Filter-sub-title>li:hover{
+  color: #227ed1;
+}
+.Filter-sub-title>li>span{
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0,-50%);
+  font-size: 12px;
+}
 .Filter-sub-title>li>a{
     display: block;
     padding: 10px 15px;

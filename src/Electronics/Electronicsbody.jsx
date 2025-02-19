@@ -1,4 +1,6 @@
 import React from "react";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
+
 import Filterby from "../Shop/Filterby";
 import Advertising from "../Shop/Advertising";
 import ShopBrand from "../Shop/ShopBrand";
@@ -12,6 +14,10 @@ const Electronicsbody = () => {
       <div className="container">
         <div className="mina-shop">
           <div className="left">
+          <Breadcrumb>
+              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+              <Breadcrumb.Item active>Electronics</Breadcrumb.Item>
+            </Breadcrumb>
             <ElecCategory/>
             <Filterby />
             <Advertising />
